@@ -1,0 +1,12 @@
+.Main {
+    @include dimensions($height: 70%);
+    padding: 1%;
+    background-color: $white;
+
+    .Title {
+        font-family: $titleFont;
+        font-size: 2rem;
+        text-align: center;
+        color: $darkBlue;
+    }
+}

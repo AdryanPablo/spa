@@ -1,0 +1,49 @@
+.Header {
+    @extend .grid;
+    grid-template-columns: "60% 40%";
+    grid-template-areas: "Logo Menu";
+    @include dimensions(100%, 20%);
+    background-color: $darkBlue;
+
+    .Logo {
+        grid-area: "Logo";
+        @extend .flex;
+        @include justify-n-align(center, center);
+        font-family: $titleFont;
+        font-size: 5rem;
+        color: $lightBlue;
+    }
+
+    .Menu {
+        grid-area: "Menu";
+        align-self: center;
+        @include dimensions(100%, 100%);
+    }
+
+    .List {
+        @extend .flex;
+        @include dimensions(100%, 100%);
+        @include justify-n-align(space-evenly, flex-end);
+        padding: 1%;
+    }
+
+    .Button {
+        flex-basis: 33%;
+    }
+
+    .Anchor {
+        display: inline-block;
+        @include dimensions(100%, none);
+        padding: 0.5em;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: $lightBlue;
+
+        &:hover {
+            background-color: $lightBlue;
+            font-weight: bold;
+            color: $darkBlue;
+        }
+    }
+}

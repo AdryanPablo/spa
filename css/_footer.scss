@@ -1,0 +1,8 @@
+.Footer {
+    @extend .flex;
+    @include justify-n-align(center, center);
+    @include dimensions($height: 10%);
+    background-color: $darkBlue;
+    font-size: 1.2rem;
+    color: $lightBlue;
+}
