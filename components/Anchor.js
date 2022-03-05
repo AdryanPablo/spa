@@ -4,11 +4,11 @@ export default function Anchor(name) {
 
     if (name == 'Home') {
 
-        Anchor.setAttribute('href', '/#')
+        Anchor.setAttribute('href', '/spa/#')
 
     } else {
 
-        Anchor.setAttribute('href', `/#${name}`)
+        Anchor.setAttribute('href', `/spa/#${name}`)
 
     }
 
